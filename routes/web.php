@@ -1,5 +1,7 @@
 <?php
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,14 +16,4 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::post('login', 'AccountController@login');
-Route::post('RegisterUser', 'AccountController@RegisterUser');
-
-Route::post('GetAddressBookList', 'AddressBookController@GetAddressBookList');
-Route::post('AddAddressBook', 'AddressBookController@AddAddressBook');
-Route::post('GetAddressBookById', 'AddressBookController@GetAddressBookById');
-Route::post('DeleteAddressBookById', 'AddressBookController@DeleteAddressBookById');
-
-
 
